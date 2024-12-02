@@ -11,7 +11,7 @@ FeatherWing TouchSlider is an expansion board for the Adafruit ESP32 Feather V2 
 </p>
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/0ab96d65-2c6a-4686-97d5-e164bc259dd0" alt="Render_Bot">
+  <img src="https://github.com/user-attachments/assets/0ab96d65-2c6a-4686-97d5-e164bc259dd0" alt="Render_Bot" style="width: 40%; height: auto;>
   <br>
   <em>FeatherWing TouchSlider - Render Bot</em>
 </p>
