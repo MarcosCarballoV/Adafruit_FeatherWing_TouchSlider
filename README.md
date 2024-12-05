@@ -18,8 +18,6 @@ FeatherWing TouchSlider is an expansion board for the Adafruit ESP32 Feather V2 
   <em>FeatherWing TouchSlider - Render Bot</em>
 </p>
 
-## Supported Modules
-
 ## Supported Modules  
 
 This FeatherWing is designed for the **[Adafruit ESP32 Feather V2](https://www.adafruit.com/product/5400)**, which can be purchased from Adafruit's website along with other Wing modules. It stands out as one of the best development boards due to its easy LiPo battery integration and the ability to stack various pre-designed boards.  
@@ -34,6 +32,36 @@ This FeatherWing is designed for the **[Adafruit ESP32 Feather V2](https://www.a
 ## Examples
 
 ## Features
+
+## Features  
+
+The module integrates the following electronic components:  
+- **[CAP1208](https://ww1.microchip.com/downloads/en/DeviceDoc/00001570C.pdf)**: An 8-channel capacitive touch sensor controller with programmable sensitivity, designed for touch sensor applications.  
+- **[SK6812MINI-E](https://cdn-shop.adafruit.com/product-files/4960/4960_SK6812MINI-E_REV02_EN.pdf)**: 8 NeoPixels, ideal for not interfering with sliding gestures due to their compact design.  
+
+Communication is handled via I2C, using **GPIO22** and **GPIO20** by default on the ESP32.
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/675564c5-56dc-4473-8a33-61696ab01ec6" alt="Feather_V2_PinOut" style="width: 65%; height: auto;">
+  <br>
+  <em>Adafruit ESP32 Feather V2 - PinOut</em>
+</p>
+
+A **RESET button** is included, and a jumper will be added soon to allow selection between RESET or a GPIO pin for use as an interrupt.  
+
+The NeoPixels are powered automatically via USB or the LiPo battery on **VBAT**:  
+- **USB** power: 4.3V  
+- **LiPo battery**: Voltage ranges from 4.2V to 3.5V depending on the battery charge.  
+
+The manufacturer of the **SK6812MINI-E** specifies an operating voltage of **3.7V to 5.5V**. Therefore, it is recommended not to use a battery discharged below 3.7V, as the colors may become inaccurate.  
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/084af5eb-f819-4a5e-a3dc-85cae4f56c0c" alt="SK6812MINI-E_Data" style="width: 40%; height: auto;">
+  <br>
+  <em>SK6812MINI-E - Electrical Parameters</em>
+</p>
+
+
 
 ## Why This Module
 
