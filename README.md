@@ -28,10 +28,7 @@ This FeatherWing is designed for the **[Adafruit ESP32 Feather V2](https://www.a
   <em>Adafruit ESP32 Feather V2</em>
 </p>
 
-
 ## Examples
-
-## Features
 
 ## Features  
 
@@ -50,7 +47,7 @@ Communication is handled via I2C, using **GPIO22** and **GPIO20** by default on 
 A **RESET button** is included, and a jumper will be added soon to allow selection between RESET or a GPIO pin for use as an interrupt.  
 
 The NeoPixels are powered automatically via USB or the LiPo battery on **VBAT**:  
-- **USB** power: 4.3V  
+- **USB power**: 4.3V  
 - **LiPo battery**: Voltage ranges from 4.2V to 3.5V depending on the battery charge.  
 
 The manufacturer of the **SK6812MINI-E** specifies an operating voltage of **3.7V to 5.5V**. Therefore, it is recommended not to use a battery discharged below 3.7V, as the colors may become inaccurate.  
@@ -61,20 +58,31 @@ The manufacturer of the **SK6812MINI-E** specifies an operating voltage of **3.7
   <em>SK6812MINI-E - Electrical Parameters</em>
 </p>
 
-
-
 ## Why This Module
 
-### Advantages:
+Currently, there is no FeatherWing with touch functionalities. This module not only integrates a capacitive touch sensor but also offers a control tool in the form of a slider. Combined with NeoPixels, it enables various interactive experiences and custom feedback through the slider.  
+
+While Adafruit offers different breakout boards, they require jumper wires or I2C cables for connection. Some examples include:  
+- **[Adafruit 12-Key Capacitive Touch Sensor Gator Breakout - MPR121](https://www.adafruit.com/product/4830)**  
+- **[Adafruit 12-Key Capacitive Touch Sensor Breakout - MPR121](https://www.adafruit.com/product/1982)**  
+- **[Adafruit 8-Key Capacitive Touch Sensor Breakout - CAP1188](https://www.adafruit.com/product/1602)**  
+- **[Adafruit 5-Pad Capacitive Touch Sensor Breakout - AT42QT1070](https://www.adafruit.com/product/1362)**  
+
+The last two breakout boards include green LEDs to indicate touch detection.  
+
+This FeatherWing provides a more integrated and compact solution for touch-based projects, eliminating the need for additional wiring and enhancing user interaction through built-in NeoPixels.  
+
+### Advantages  
+
+- **Integrated Design**: Combines touch sensing and visual feedback in a single FeatherWing, reducing the need for external wiring.  
+- **Slider Functionality**: Offers an intuitive control method for various applications, from UI navigation to custom input controls.  
+- **NeoPixel Feedback**: Provides vibrant visual cues with customizable animations for enhanced user interaction.  
+- **Seamless Feather Integration**: Designed specifically for Adafruit Feather boards, enabling easy stacking and compact builds.  
+- **Power Flexibility**: Automatically switches between USB and LiPo battery power, ensuring consistent NeoPixel performance.  
 
 ## Authors
 
 - [@MarcosCarballoV](https://github.com/MarcosCarballoV)
- 
-## Dependencies
-
-This library depends on:
-
 
 ## Setup Instructions
 
@@ -118,7 +126,7 @@ The steps to install this library depend on the IDE you are using. PlatformIO is
      ```
 
 3. **Upload Your Code:**
-   - Write your code using the TouchSlider library.
+   - Write your code using the TouchSlider and CAP1208 library.
    - Connect your ESP32 board to your computer.
    - Select the correct board and port from `Tools` > `Board` and `Tools` > `Port`.
    - Click the upload button to compile and upload your code to the board.
@@ -137,6 +145,16 @@ In your setup, or any other part of the main program that only runs once, use th
 ### Implement Rest of Your Code
 The updateTouchSlider() function will be called every SLIDER_INTERVAL (In this example, 200 ms), independently of the rest of the code
 
-## Documentation
+## Schematics  
+
+The schematics for the Adafruit FeatherWing TouchSlider provide a detailed overview of the connections between the CAP1208, NeoPixels, and the ESP32 Feather V2. They include the I2C communication lines, power management, and the RESET button configuration.  
+
+[**View Schematics**](link_to_schematics.pdf)  
+
+## Gerber Files  
+
+The Gerber files for the FeatherWing TouchSlider are available for download, enabling easy fabrication of the PCB. These files include all necessary layers, such as copper, solder mask, and silkscreen, for manufacturing.  
+
+[**Download Gerber Files**](link_to_gerber.zip)  
 
 
