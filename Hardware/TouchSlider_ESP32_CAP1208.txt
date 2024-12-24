@@ -1,0 +1,56 @@
+Board Information Report
+Filename     : D:\Documents\AD24 - Proyects\TouchSliders_ESP32_CAP1208\TouchSlider_ESP32_CAP1208.PcbDoc
+Date         : 22/11/2024
+Time         : 06:44:57 p. m.
+Time Elapsed : 00:00:00
+
+General
+    Board Size, 2000milsx900mils
+    Components on board, 26
+count : 2
+
+Routing Information
+    Routing completion, 100.00%
+    Connections, 74
+    Connections routed, 74
+    Connections remaining, 0
+count : 4
+
+Layer, Arcs, Pads, Vias, Tracks, Texts, Fills, Regions, ComponentBodies
+    Top Layer, 135, 8, 0, 623, 0, 0, 2, 0
+    Bottom Layer, 138, 83, 0, 1018, 0, 0, 12, 0
+    Mechanical 1, 1, 0, 0, 2, 1, 0, 0, 19
+    Board Shape, 0, 0, 0, 40, 0, 0, 0, 0
+    Board, 0, 0, 0, 0, 0, 0, 0, 0
+    Top Assembly, 1, 0, 0, 4, 0, 0, 0, 0
+    Bottom Assembly, 3, 0, 0, 113, 13, 0, 5, 2
+    Multi-Layer, 0, 34, 47, 0, 0, 0, 9, 0
+    Top Paste, 0, 0, 0, 0, 0, 0, 0, 0
+    Top Overlay, 0, 0, 0, 7, 4, 0, 0, 0
+    Top Solder, 0, 0, 0, 0, 0, 0, 0, 0
+    Bottom Solder, 0, 0, 0, 0, 0, 0, 0, 0
+    Bottom Overlay, 4, 0, 0, 64, 48, 0, 1, 0
+    Bottom Paste, 0, 0, 0, 0, 0, 0, 0, 0
+    Drill Guide, 0, 0, 0, 0, 0, 0, 0, 0
+    Keep-Out Layer, 0, 0, 0, 0, 0, 0, 0, 0
+    Drill Drawing, 0, 0, 0, 0, 0, 0, 0, 0
+count : 17
+
+Via Solder Mask, CountTop Solder MaskBottom Solder Mask
+    0mils, 0, 21
+    1mils, 26, 26
+    4mils, 21, 0
+count : 3
+
+Track Width, Count
+    3.937mils, 64
+    5mils, 1456
+    5.906mils, 6
+    6mils, 48
+    8mils, 35
+    10mils, 262
+count : 6
+
+Net Via Size, Count
+    27.559mils, 28
+count : 1
